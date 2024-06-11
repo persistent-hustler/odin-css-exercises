@@ -22,6 +22,22 @@
 .header {
   background-color: #393f4d;
   grid-area: 1/1/2/3;
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  align-items: center;
+}
+
+.header .logo {
+  justify-self: start;
+}
+
+ul {
+  list-style: none;
+  display: grid;
+}
+
+.menu ul {
+  grid-template-columns: repeat(4, 1fr);
 }
 
 .menu ul,
@@ -42,7 +58,6 @@
   border-radius: 10px;
 }
 
-
 .sidebar .side-content {
   background-color: white;
   color: black;
@@ -53,6 +68,10 @@
 .nav {
   background-color: #C50208;
   grid-area: 2/2/3/3;
+}
+
+.nav ul {
+  grid-template-columns: repeat(3, 1fr);
 }
 
 .nav ul li {
